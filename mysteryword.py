@@ -9,16 +9,18 @@ def play_game():
     if greeting == "EASY":
         easy_list = [word for word in words_list if len(word) <= 6 and len(word) >= 4]
         random_word = random.choice(easy_list)
-        print(random_word)
+        #print(random_word)
     elif greeting == "NORMAL":
         normal_list = [word for word in words_list if len(word) <= 8 and len(word) >= 6]
         random_word = random.choice(normal_list)
-        print(random_word)
+        #print(random_word)
     elif greeting == "HARD":
         hard_list = [word for word in words_list if len(word) >= 8]
         random_word = random.choice(hard_list)
-        print(random_word)
+        #print(random_word)
     else:
         print("Please type Easy, Normal, or Hard.")
+
+    print("The Mystery Word contains", len(random_word), "letters.")
 
 play_game()
