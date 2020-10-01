@@ -26,7 +26,7 @@ def play_game():
     used_letters = []
     building_word = []
     building_word_string = ''
-    print("You have", guesses_remaining, "guesses remaining!")
+    print("You have", guesses_remaining, "guesses! Go!")
     #comment this print line later
     #print(random_word)
 
