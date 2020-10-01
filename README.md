@@ -71,3 +71,5 @@ Put it in a new Python program called "demon_words.py".
 ## Credit
 
 This lab is based off a similar exercise in MIT's 6.00.1x course.
+
+[![Run on Repl.it](https://repl.it/badge/github/momentum-morehouse/python-mystery-word-mjhow4)](https://repl.it/github/momentum-morehouse/python-mystery-word-mjhow4)
