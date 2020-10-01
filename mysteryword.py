@@ -28,7 +28,7 @@ def play_game():
     building_word_string = ''
     print("You have", guesses_remaining, "guesses remaining!")
     #comment this print line later
-    print(random_word)
+    #print(random_word)
 
     while guesses_remaining > -1:
         user_guess = str(input("Please select one letter: ").lower())
@@ -45,9 +45,10 @@ def play_game():
             print(building_word)
             building_word_string = '' .join(building_word)
             print(building_word_string)
-            print(random_word.lower())
+            #print(random_word.lower())
             if int(len(building_word_string)) + 1 == int(len(random_word)):
                 print("You Won!")
+                print("The Mystery Word was:", random_word)
                 ask_user_play = str(input("Would you like to play, again? (Please enter Yes or No): ").upper())
                 if ask_user_play == "YES":
                     play_game()
