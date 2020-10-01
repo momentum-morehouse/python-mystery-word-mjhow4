@@ -65,11 +65,15 @@ def play_game():
                 None
             print("Incorrect choice, please try again!")
             guesses_remaining -= 1
-            print("You have", guesses_remaining, "guesses remaining!")
+            if guesses_remaining > 1:
+                print("You have", guesses_remaining, "guesses remaining!")
+            else:
+                print("You have", guesses_remaining, "guess remaining!")
             used_letters.append(user_guess)
             print(used_letters)
             if guesses_remaining == 0:
                 print("You Lose!")
+                print("The Mystery Word was:", random_word)
                 ask_user_play = str(input("Would you like to play, again? (Please enter Yes or No): ").upper())
                 if ask_user_play == "YES":
                     play_game()
@@ -81,3 +85,5 @@ def play_game():
 
 
 play_game()
+#game still has some issues to work out
+#for one game does not work for duplicate letters in Mystery Word
